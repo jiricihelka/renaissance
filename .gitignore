@@ -8,3 +8,5 @@ tools/sbt/lib/local-preloaded/
 # Scratch directories
 harness-*/
 launcher-*/
+.sbt
+.ivy2

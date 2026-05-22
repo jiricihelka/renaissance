@@ -256,6 +256,13 @@ lazy val dummyBenchmarks = (project in file("benchmarks/dummy"))
   )
   .dependsOn(renaissanceCore % "provided")
 
+lazy val concurrentHashmapBenchmarks = (project in file("benchmarks/concurrent-hashmap"))
+  .settings(
+    name := "concurrent-hashmap",
+    commonSettingsNoScala,
+  )
+  .dependsOn(renaissanceCore % "provided")
+
 lazy val actorsAkkaBenchmarks = (project in file("benchmarks/actors-akka"))
   .settings(
     name := "actors-akka",
@@ -665,6 +672,7 @@ lazy val twitterFinagleBenchmarks = (project in file("benchmarks/twitter-finagle
  */
 val renaissanceBenchmarks: Seq[Project] = Seq(
   dummyBenchmarks,
+  concurrentHashmapBenchmarks,
   actorsAkkaBenchmarks,
   actorsReactorsBenchmarks,
   apacheSparkBenchmarks,
