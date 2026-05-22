@@ -9,9 +9,9 @@ import org.renaissance.License;
 import static org.renaissance.Benchmark.*;
 import java.util.concurrent.ConcurrentHashMap;
 
-@Name("concurrent-hashmap-read-write")
+@Name("concurrent-hashmap-read-write-remove")
 @Group("concurrent-hashmap")
-@Summary("Performs read and write operations on a concurrent hashmap.")
+@Summary("Performs read, write, and remove operations on a concurrent hashmap.")
 @Parameter(name = "thread_count", defaultValue = "$cpu.count")
 @Parameter(name = "total_items", defaultValue = "1000000")
 @Parameter(name = "key_range", defaultValue = "1000000")
